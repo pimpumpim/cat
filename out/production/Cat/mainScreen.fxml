@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="500.0" maxWidth="800.0" prefHeight="500.0" prefWidth="800.0" styleClass="backgroundMain" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.MainScreenController">
+   <children>
+      <StackPane layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <ImageView fx:id="animalPicture" fitHeight="408.0" fitWidth="300.0" layoutX="480.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ONE_COLOR.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="posthumousInscription" fill="#ffee00" layoutX="280.0" layoutY="102.0" lineSpacing="10.0" stroke="RED" text="Text">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox layoutX="20.0" layoutY="41.0" prefHeight="398.0" prefWidth="188.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ToolBar fx:id="cycleLifeAnimal" prefHeight="51.0" prefWidth="200.0" styleClass="toolBar">
+                                 <items>
+                                    <Button maxHeight="36.0" maxWidth="36.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="36.0" prefWidth="36.0" styleClass="iconAddCat">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/plus.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button maxHeight="36.0" maxWidth="36.0" mnemonicParsing="false" onMouseClicked="#clone" prefHeight="36.0" prefWidth="36.0" styleClass="iconAddCat">
+                                       <graphic>
+                                          <ImageView fitHeight="25.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/clone.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button maxHeight="36.0" maxWidth="36.0" mnemonicParsing="false" onMouseClicked="#fly" prefHeight="36.0" prefWidth="36.0" style="-fx-background-radius: 18;" styleClass="iconFlyCat">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/airplane.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button maxHeight="36.0" maxWidth="36.0" mnemonicParsing="false" onMouseClicked="#explosion" prefHeight="36.0" prefWidth="36.0" styleClass="iconDeleteCat">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/explosion.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button maxHeight="36.0" maxWidth="36.0" mnemonicParsing="false" onMouseClicked="#voiceDeath" prefHeight="36.0" prefWidth="36.0" styleClass="iconDeleteCat">
+                                       <graphic>
+                                          <ImageView fitHeight="36.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/meowDeath.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </items>
+                              </ToolBar>
+                              <ListView fx:id="listCat" prefHeight="450.0" style="-fx-background-color: transparent;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <BorderPane fx:id="kontrolAnimal" prefHeight="498.0" prefWidth="557.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button maxHeight="122.0" maxWidth="110.0" mnemonicParsing="false" onMouseClicked="#voice" prefHeight="122.0" prefWidth="110.0" styleClass="imageButton">
+                                       <graphic>
+                                          <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/meow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </left>
+                           <bottom>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button maxHeight="110.0" maxWidth="110.0" mnemonicParsing="false" onMouseClicked="#eat" prefHeight="110.0" prefWidth="110.0" styleClass="imageButton">
+                                       <graphic>
+                                          <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/cat_hungry.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button layoutX="15.0" layoutY="15.0" maxHeight="122.0" maxWidth="110.0" mnemonicParsing="false" onMouseClicked="#restroom" prefHeight="122.0" prefWidth="110.0" styleClass="imageButton">
+                                       <graphic>
+                                          <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../img/tray.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                           <top>
+                              <ToolBar prefHeight="50.0" prefWidth="200.0" styleClass="toolBar" BorderPane.alignment="CENTER">
+                                 <items>
+                                    <Label text="Вес" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane>
+                                       <children>
+                                          <ProgressBar fx:id="progrssBarWeight" prefWidth="200.0" progress="0.53" styleClass="progressBar" />
+                                          <Text fx:id="weightLabel" stroke="WHITE" strokeType="OUTSIDE" text="Text">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </items>
+                              </ToolBar>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

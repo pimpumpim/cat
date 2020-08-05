@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="airport">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/airport.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/src/lib/airport.jar!/" />
+    </SOURCES>
+  </library>
+</component>

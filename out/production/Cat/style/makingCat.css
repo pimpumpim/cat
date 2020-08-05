@@ -1,0 +1,16 @@
+.field{
+    -fx-min-width: 200.0;
+    -fx-background-radius: 2;
+    -fx-border-color:  #dc7633;
+    -fx-background-color: #ffffff;
+}
+
+.allStart{
+    -fx-spacing: 5;
+    -fx-background-color: #f5cba7;
+}
+
+.button{
+    -fx-background-color: #dc7633 ;
+    -fx-background-radius: 2;
+}

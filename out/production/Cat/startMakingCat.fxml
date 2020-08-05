@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" styleClass="allStart" stylesheets="@../style/makingCat.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="catName" maxWidth="-Infinity" promptText="Имя кота" styleClass="field">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="startWeight" maxWidth="-Infinity" promptText="Вес кота (больше 1000 г.)" styleClass="field">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ComboBox fx:id="choiceBox" prefWidth="150.0" promptText="Окрас кота" styleClass="field" />
+      <Button fx:id="addCat" mnemonicParsing="false" onMouseClicked="#addCat" prefWidth="200.0" text="СОЗДАТЬ КОТА" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="randomCats" mnemonicParsing="false" onMouseClicked="#randomCats" prefWidth="200.0" text="5-7 СЛУЧАЙНЫХ КОТОВ" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,91 @@
+.imageButton{
+    -fx-background-color: #ff4600 ;
+    -fx-background-radius: 50;
+    -fx-border-width: 3;
+    -fx-border-color: #6d2b00;
+    -fx-border-radius: 45;
+    -fx-border-insets: -1;
+
+}
+
+
+.iconAddCat{
+    -fx-max-width: 36;
+    -fx-max-height: 36;
+    -fx-background-radius: 18;
+    -fx-background-color:  #82e0aa;
+}
+
+.iconFlyCat{
+    -fx-max-width: 36;
+    -fx-max-height: 36;
+    -fx-background-radius: 18;
+    -fx-background-color: #f9e79f;
+
+}
+
+.iconDeleteCat{
+    -fx-max-width: 36;
+    -fx-max-height: 36;
+    -fx-background-radius: 18;
+    -fx-background-color:  #ec7063;
+
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: rgba(50, 50, 50, 1.0);
+    -fx-text-fill: white;
+}
+.list-cell:filled:hover {
+    -fx-background-color: rgba(25, 25, 25, 1.0);
+    -fx-text-fill: white;
+}
+.list-cell {
+    -fx-text-fill: white;
+ }
+.list-cell:odd {
+    -fx-background-color: rgba(50, 50, 50, 0.75);
+    -fx-text-fill: white;
+}
+.list-cell:even {
+    -fx-background-color: rgba(50, 50, 50, 0.5);
+    -fx-text-fill: white;
+}
+.list-view .scroll-bar{
+    -fx-background-color: rgba(50, 50, 50, 0.5);
+}
+.list-view .scroll-bar .thumb{
+    -fx-background-color: rgba(50, 50, 50, 0.9);
+}
+
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: rgba(50, 50, 50, 0.5);
+    -fx-padding: 2 ;
+}
+
+.toolBar {
+    -fx-background-color: rgba(50, 50, 50, 0.5);
+}
+
+
+.backgroundMain{
+    -fx-background-image:  url("../img/background.jpg");
+    -fx-background-size: 800 500
+
+}
+
+.progressBar{
+    -fx-min-width: 200.0;
+    -fx-background-radius: 2;
+    -fx-border-radius: 2;
+    -fx-padding: -2.0;
+    -fx-border-color:  #dc7633;
+    -fx-background-color: #ffffff;
+}
+
+.progress-bar > .bar {
+    -fx-padding: 0.60em;
+    -fx-radius: 2;
+    -fx-background-color: #ff4600;
+}
